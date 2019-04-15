@@ -1,4 +1,8 @@
-body {
+header {
   background-color: green;
+}
+
+body {
+  background-color: red;
 }
 /*# sourceMappingURL=style.css.map */
