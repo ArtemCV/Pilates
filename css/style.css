@@ -95,6 +95,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Ubuntu Regular';
+  src: url("../fonts/Ubuntu-Regular.eot");
+  src: url("../fonts/Ubuntu-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Ubuntu-Regular.woff") format("woff"), url("../fonts/Ubuntu-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -136,10 +144,22 @@ body:after {
 }
 
 header {
+  position: relative;
   margin: auto;
   min-width: 1366px;
   max-width: 1366px;
   min-height: 786px;
+  border: 1px solid red;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 206px;
+  background-image: url("../img/navigation1.png");
+  right: 38px;
+  top: 240px;
 }
 
 .page-nav {
@@ -173,10 +193,9 @@ header {
 }
 
 .page-nav_telephone {
-  font-size: 14.3px;
+  font-family: 'San Francisco Text Bold';
+  font-size: 14.0px;
   font-weight: bold;
-  letter-spacing: 1.5px;
-  line-height: 21px;
   margin-left: auto;
 }
 
@@ -195,6 +214,7 @@ header {
   letter-spacing: 2.6px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  z-index: 10;
   background-color: #91aa59;
 }
 
@@ -218,9 +238,6 @@ header {
 }
 
 .discription {
-  color: #ffffff;
-  margin-top: 170px;
-  margin-left: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,18 +245,45 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #ffffff;
+  margin-top: 85px;
+  margin-left: 100px;
+}
+
+.discription__discription-header {
+  font-family: 'Roboto Light';
+  font-size: 58.5px;
+  line-height: 1.241;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: normal;
+  margin-bottom: 0;
+  width: 300px;
+}
+
+.discription__text {
+  padding: 0 0;
+  margin-top: 14px;
+  font-family: 'San Francisco Text Light';
+  font-size: 17.57px;
+  line-height: 1.705;
 }
 
 .discription__schedule-link {
+  position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 17px;
+  padding-bottom: 19px;
   padding-left: 45px;
-  padding-right: 45px;
-  margin-top: 51px;
-  width: 244px;
+  padding-right: 35px;
+  margin-top: 45px;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 1.5px;
+  width: 250px;
   border: 2px solid #ffffff;
   border-radius: 50px;
   text-decoration: none;
@@ -252,7 +296,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 11px;
+  top: 21px;
+  margin-left: 9px;
   background-image: url("../img/buttonArrow.png");
   background-repeat: no-repeat;
   width: 72px;

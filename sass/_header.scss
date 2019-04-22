@@ -1,15 +1,30 @@
 header
 {
     // background-color: green;
+    position: relative;
     margin: auto;
     min-width: 1366px;
     max-width: 1366px;
     min-height: 786px;
+    
     //position: relative;
     
-    //border: 1px solid red;
+    border: 1px solid red;
     //outline: 1px solid red; /* Параметры рамки */
+    &::after
+    {
+        content: "";
+        position: absolute;
+
+        width: 16px;
+        height: 206px;
+        
+        background-image: url('../img/navigation1.png');
+        right: 38px;
+        top: 240px;
+    }
 }
+
 .page-nav
 {
     content: "";    
@@ -50,13 +65,12 @@ header
 }
 .page-nav_telephone
 {
-    
-    font-size: 14.3px;
+    font-family: 'San Francisco Text Bold';
+    font-size: 14.0px;
     font-weight: bold;
-    letter-spacing: 1.5px;
-    line-height: 21px;
-    margin-left: auto;
+    // letter-spacing: 0px;
     
+    margin-left: auto;
 }
 
 .page-nav__main-menu-list
@@ -82,7 +96,7 @@ header
 
     box-sizing: border-box;
 
-
+    z-index: 10;
     background-color: #91aa59;
 }
 .menu-item
@@ -110,53 +124,88 @@ header
 //discription
 .discription
 {
-    color: #ffffff;
-    margin-top:170px;
-    margin-left: 100px;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 
-    font-size: 12px;
+    color: #ffffff;
+    
+    margin-top:85px;
+    margin-left: 100px;
+    
+    //border: 1px solid red;
+    
+
+    //font-size: 12px;
     // line-height: 71px;
     
 }
 .discription__discription-header
 {
-    //font-family: 'Roboto Light';
+    font-family: 'Roboto Light';
+    font-size: 58.5px;
+    line-height: 1.241;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: normal;
+
+    margin-bottom: 0;
+
+    width: 300px;
+    //border: 1px solid red;
+
+}
+.discription__text
+{
+    //border: 1px solid blue;
+    padding: 0 0;
+    margin-top:14px;
+    
+    font-family: 'San Francisco Text Light';
+    font-size: 17.57px;
+    line-height: 1.705;
 
 }
 .discription__schedule-link
 {
+    position: relative;
     box-sizing: border-box;
 
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding-top: 17px;
+    padding-bottom: 19px;
     padding-left: 45px;
-    padding-right: 45px;
-    margin-top: 51px;
+    padding-right: 35px;
+    margin-top: 45px;
 
-    width: 244px;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 1.5px;
+
+    width: 250px;
 
     border: 2px solid #ffffff;
     border-radius: 50px;
 
     text-decoration: none;
     color: #ffffff;
-}
-.discription__schedule-link::after
-{
-    position: absolute;
-    content: "";
-    align-items: center;
+
+    &::after
+    {
+        position: absolute;
+        content: "";
+        align-items: center;
+        top:21px;
     
-
-    margin-left:11px;
-
-    background-image: url('../img/buttonArrow.png');
-    background-repeat: no-repeat;
-    width: 72px;
-    height: 12px;
-
-    //border: 1px solid red;
+        margin-left:9px;
+    
+        background-image: url('../img/buttonArrow.png');
+        background-repeat: no-repeat;
+        width: 72px;
+        height: 12px;
+        
+    
+        //border: 1px solid red;
+    }
 }
+
 
