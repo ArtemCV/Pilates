@@ -1,17 +1,20 @@
-document.onload = Init;
+document.addEventListener('DOMContentLoaded', function() {
+    Init()
+ }, false);
+
+
 function Init()
 {
-    var OpenMenuButton = document.getElementsByClassName('page-nav_button-open-Menu');
-    var CloseMenuButton = document.getElementsByClassName('page-nav_button-close-Menu');
+    var OpenMenuButton = document.getElementsByClassName('page-nav_button-open-Menu')[0];
+    var CloseMenuButton = document.getElementsByClassName('page-nav_button-close-Menu')[0];
+    var Menu = document.getElementsByClassName('page-nav__main-menu-list')[0];
 
-    alert(OpenMenuButton.length);
-
-    OpenMenuButton[0].onclick(function()
+    OpenMenuButton.onclick = function()
     {
-        alert("sadf");
-    });
-    CloseMenuButton[0].onclick(function()
+        Menu.classList.remove("visually-hidden"); // удалить класс «class-name»
+    }
+    CloseMenuButton.onclick = function()
     {
-        alert("sadf");
-    });
+        Menu.classList.add("visually-hidden"); // добавить класс «class-name»
+    }
 }
