@@ -122,6 +122,7 @@ header
 }
 .discription__discription-header
 {
+    //font-family: 'Roboto Light';
 
 }
 .discription__schedule-link
@@ -141,12 +142,21 @@ header
 
     text-decoration: none;
     color: #ffffff;
-    
-    
+}
+.discription__schedule-link::after
+{
+    position: absolute;
+    content: "";
+    align-items: center;
     
 
-    
+    margin-left:11px;
 
-    
+    background-image: url('../img/buttonArrow.png');
+    background-repeat: no-repeat;
+    width: 72px;
+    height: 12px;
+
+    //border: 1px solid red;
 }
 
