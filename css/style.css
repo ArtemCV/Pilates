@@ -147,9 +147,8 @@ header {
   position: relative;
   margin: auto;
   min-width: 1366px;
-  max-width: 1366px;
+  width: 1366px;
   min-height: 786px;
-  border: 1px solid red;
 }
 
 header::after {
@@ -159,7 +158,9 @@ header::after {
   height: 206px;
   background-image: url("../img/navigation1.png");
   right: 38px;
-  top: 240px;
+  top: 212px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .page-nav {
@@ -202,7 +203,7 @@ header::after {
 .page-nav__main-menu-list {
   content: "";
   position: absolute;
-  top: 0px;
+  top: -30px;
   margin: 0;
   padding: 0;
   padding-top: 170px;

@@ -1,27 +1,31 @@
 header
 {
-    // background-color: green;
+    
     position: relative;
     margin: auto;
     min-width: 1366px;
-    max-width: 1366px;
+    width: 1366px;
     min-height: 786px;
+    
     
     //position: relative;
     
-    border: 1px solid red;
+    
+    //border: 1px solid red;
     //outline: 1px solid red; /* Параметры рамки */
     &::after
     {
         content: "";
         position: absolute;
-
+        
         width: 16px;
         height: 206px;
         
         background-image: url('../img/navigation1.png');
         right: 38px;
-        top: 240px;
+        top: 212px;
+        padding: 0px;
+        margin: 0px;
     }
 }
 
@@ -78,7 +82,7 @@ header
     content: "";
     
     position: absolute;
-    top: 0px;
+    top: -30px;
     margin: 0;
     padding:0;
 
