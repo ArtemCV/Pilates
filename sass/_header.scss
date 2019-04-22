@@ -1,4 +1,109 @@
 header
 {
-    background-color: green;
+    // background-color: green;
+    margin: auto;
+    min-width: 1366px;
+    max-width: 1366px;
+    min-height: 786px;
+    //position: relative;
+    
+    //border: 1px solid red;
+    //outline: 1px solid red; /* Параметры рамки */
 }
+.page-nav
+{
+    content: "";    
+    //position: relative;
+    //border: 1px solid transparent;
+    
+    
+}
+
+.main-nav-list-wrapper
+{
+    display: flex;
+    
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 102px;
+
+    
+    
+    align-items: center;
+    
+}
+
+.page-nav__page-logo
+{
+    margin-right: 490px;
+}
+.page-nav_button-open-Menu
+{
+    padding: 0 0;
+    margin: 0 0;
+    border: none;
+    background-image: url(../img/buttonOpenImage.png);
+    background-color: transparent;
+    width: 23px;
+    height: 16px;
+    
+}
+.page-nav_telephone
+{
+    
+    font-size: 14.3px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    line-height: 21px;
+    margin-left: auto;
+    
+}
+
+.page-nav__main-menu-list
+{
+    content: "";
+    
+    position: absolute;
+    top: 0px;
+    margin: 0;
+    padding:0;
+
+    padding-top: 170px;
+    padding-left: 420px;
+
+    min-width: 1366px;
+    min-height: 786px;
+    color: white;
+    font-size: 48px;
+    opacity: .5;
+
+    letter-spacing: 2.6px;
+    //line-height: 21px;
+
+    box-sizing: border-box;
+
+
+    background-color: #91aa59;
+}
+.menu-item
+{
+    padding: 0;
+    margin: 0;
+    padding-bottom: 45px;
+    list-style-type: none;
+    
+}
+.page-nav_button-close-Menu
+{
+    display: block;
+    position: absolute;
+    top:50px;
+    right: 50px;
+    background-image: url(/img/buttonCloseImage.png);
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    
+    border: none;
+}
+//91aa59
