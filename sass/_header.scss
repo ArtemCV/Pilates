@@ -75,7 +75,7 @@ header
     min-height: 786px;
     color: white;
     font-size: 48px;
-    opacity: .5;
+    //opacity: .5;
 
     letter-spacing: 2.6px;
     //line-height: 21px;
@@ -106,4 +106,47 @@ header
     
     border: none;
 }
-//91aa59
+
+//discription
+.discription
+{
+    color: #ffffff;
+    margin-top:170px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+
+    font-size: 12px;
+    // line-height: 71px;
+    
+}
+.discription__discription-header
+{
+
+}
+.discription__schedule-link
+{
+    box-sizing: border-box;
+
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-top: 51px;
+
+    width: 244px;
+
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+
+    text-decoration: none;
+    color: #ffffff;
+    
+    
+    
+
+    
+
+    
+}
+
