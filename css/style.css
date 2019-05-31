@@ -142,7 +142,17 @@ body:after {
   z-index: -1;
 }
 
-@media (max-width: 764px) {
+@media screen and (min-width: 764px) and (max-width: 1365px) {
+  body {
+    background-color: white;
+    background-image: url("../img/MainScreenBg_Plansh.png.jpg");
+    background-position: top right;
+    /* Положение фона */
+    background-repeat: no-repeat;
+    /* Отменяем повторение фона */
+    width: 100%;
+    height: 100%;
+  }
   body:after {
     content: "";
     display: block;
@@ -157,26 +167,7 @@ body:after {
     width: 100%;
     height: 100%;
     opacity: 0.2;
-    z-index: -1;
-  }
-}
-
-@media (max-width: 320px) {
-  body:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url(../img/ref_mobile.jpg);
-    background-position: top center;
-    /* Положение фона */
-    background-repeat: no-repeat;
-    /* Отменяем повторение фона */
-    width: 100%;
-    height: 100%;
-    opacity: 0.2;
-    z-index: -1;
+    z-index: 1;
   }
 }
 
@@ -191,19 +182,6 @@ header {
   content: '';
   overflow: auto;
   content: "";
-}
-
-header::after {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 206px;
-  background-image: url("../img/navigation1.png");
-  right: 38px;
-  top: 240px;
-  padding: 0px;
-  margin: 0px;
-  overflow: auto;
 }
 
 .page-nav {
@@ -246,7 +224,7 @@ header::after {
 .page-nav__main-menu-list {
   content: "";
   position: absolute;
-  top: -30px;
+  top: 0px;
   margin: 0;
   padding: 0;
   padding-top: 170px;
@@ -255,6 +233,7 @@ header::after {
   min-height: 786px;
   color: white;
   font-size: 48px;
+  border: solid 1px red;
   letter-spacing: 2.6px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -348,24 +327,41 @@ header::after {
   height: 12px;
 }
 
-@media (max-width: 764px) {
+@media screen and (min-width: 1365px) {
+  header::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 206px;
+    background-image: url("../img/navigation1.png");
+    right: 38px;
+    top: 240px;
+    padding: 0px;
+    margin: 0px;
+    overflow: auto;
+  }
+}
+
+@media screen and (min-width: 764px) and (max-width: 1365px) {
   header {
     position: relative;
     margin: auto;
-    min-width: 764x;
-    width: 764x;
+    min-width: 764px;
+    width: 100%;
     min-height: 679px;
-    background-image: url("../img/MainScreenBg_Plansh.png.jpg");
+    background-image: url("../img/MainScreenBg_Plansh.jpg");
+    background-repeat: no-repeat;
   }
   .page-nav__main-menu-list {
     content: "";
+    border: 1px solid Blue;
     position: absolute;
     top: -30px;
     margin: 0;
     padding: 0;
-    padding-top: 170px;
-    padding-left: 420px;
-    min-width: 764x;
+    padding-top: 0px;
+    padding-left: 0px;
+    min-width: 764px;
     min-height: 679px;
     color: white;
     font-size: 48px;
@@ -374,6 +370,40 @@ header::after {
             box-sizing: border-box;
     z-index: 10;
     background-color: #91aa59;
+  }
+  .main-nav-list-wrapper {
+    margin-top: 23px;
+    margin-left: 60px;
+    margin-right: 60px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .page-nav__page-logo {
+    width: 50px;
+    height: 41px;
+    margin-right: 260px;
+  }
+  .page-nav_button-open-Menu {
+    padding: 0 0;
+    margin-top: -10px;
+    border: none;
+    width: 23px;
+    height: 16px;
+  }
+  .page-nav_telephone {
+    margin-top: -10px;
+  }
+  .discription {
+    margin-left: 60px;
+  }
+  .discription__discription-header {
+    font-size: 48.5px;
+    line-height: 1.241;
+    letter-spacing: 3px;
+  }
+  .discription__text {
+    margin-top: 37px;
   }
 }
 /*# sourceMappingURL=style.css.map */

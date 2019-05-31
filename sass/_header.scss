@@ -18,22 +18,22 @@ header
     content: "";    
     //border: 1px solid red;
     //outline: 1px solid red; /* Параметры рамки */
-    &::after
-    {
-        content: "";
-        position: absolute;
+    // &::after
+    // {
+    //     content: "";
+    //     position: absolute;
         
-        width: 16px;
-        height: 206px;
+    //     width: 16px;
+    //     height: 206px;
         
-        background-image: url('../img/navigation1.png');
-        right: 38px;
-        top: 240px;
-        padding: 0px;
-        margin: 0px;
+    //     background-image: url('../img/navigation1.png');
+    //     right: 38px;
+    //     top: 240px;
+    //     padding: 0px;
+    //     margin: 0px;
 
-        overflow: auto;
-    }
+    //     overflow: auto;
+    // }
 }
 
 .page-nav
@@ -72,7 +72,6 @@ header
     background-color: transparent;
     width: 23px;
     height: 16px;
-    
 }
 .page-nav_telephone
 {
@@ -89,7 +88,7 @@ header
     content: "";
     
     position: absolute;
-    top: -30px;
+    top: 0px;
     margin: 0;
     padding:0;
 
@@ -101,6 +100,7 @@ header
     color: white;
     font-size: 48px;
     //opacity: .5;
+    border: solid 1px red;
 
     letter-spacing: 2.6px;
     //line-height: 21px;
@@ -219,33 +219,59 @@ header
     }
 }
 
-@media (max-width: 764px) {
+@media screen and (min-width:1365px){
+
+    header
+    {
+        &::after
+        {
+            content: "";
+            position: absolute;
+            
+            width: 16px;
+            height: 206px;
+            
+            background-image: url('../img/navigation1.png');
+            right: 38px;
+            top: 240px;
+            padding: 0px;
+            margin: 0px;
+
+            overflow: auto;
+        }
+    }
+}
+
+
+@media screen and (min-width:764px) and (max-width:1365px) {
     
     header
     {
         position: relative;
         margin: auto;
-        min-width: 764x;
-        width: 764x;
+        min-width: 764px;
+        width: 100%;
         min-height: 679px;
         //border: 1px solid red;
-        background-image: url('../img/MainScreenBg_Plansh.png.jpg');
+        background-image: url('../img/MainScreenBg_Plansh.jpg');
+        background-repeat: no-repeat;
+        
     }
 
 
     .page-nav__main-menu-list
     {
         content: "";
-        
+        border: 1px solid Blue;
         position: absolute;
         top: -30px;
         margin: 0;
         padding:0;
 
-        padding-top: 170px;
-        padding-left: 420px;
+        padding-top: 0px;
+        padding-left: 0px;
 
-        min-width: 764x;
+        min-width: 764px;
         min-height: 679px;
         color: white;
         font-size: 48px;
@@ -258,8 +284,57 @@ header
 
         z-index: 10;
         background-color: #91aa59;
-}
-    
+    }
+
+    .main-nav-list-wrapper
+    {
+        margin-top: 23px;
+        margin-left: 60px;
+        margin-right: 60px;
+        align-items: center;
+        
+    }
+
+    .page-nav__page-logo
+    {
+        width: 50px;
+        height: 41px;
+        margin-right: 260px;
+    }
+
+    .page-nav_button-open-Menu
+    {
+        padding: 0 0;
+        margin-top: -10px;
+        border: none;
+        width: 23px;
+        height: 16px;
+        //align-items: 50px;
+        //align-self:500px;
+    }
+    .page-nav_telephone
+    {
+        margin-top: -10px;
+    }
+
+
+    .discription
+    {
+        margin-left: 60px;
+    }
+
+    .discription__discription-header
+    {
+        font-size: 48.5px;
+        line-height: 1.241;
+        letter-spacing: 3px;
+    }
+
+    .discription__text
+    {
+        margin-top:37px;
+    }
+        
 }
 
 
