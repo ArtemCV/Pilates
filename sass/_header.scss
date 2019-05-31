@@ -2,15 +2,20 @@ header
 {
     
     position: relative;
-    margin: auto;
+    margin: 0 auto;
     min-width: 1366px;
     width: 1366px;
     min-height: 786px;
-    
-    
+    background-image: url('../img/MainScreenBg.png');
+    //color:#fff; 
+    //text-align:center; 
+    background-size:cover;
+    content: '';
+    overflow: auto;
+    //display: inline-block;
     //position: relative;
     
-    
+    content: "";    
     //border: 1px solid red;
     //outline: 1px solid red; /* Параметры рамки */
     &::after
@@ -23,9 +28,11 @@ header
         
         background-image: url('../img/navigation1.png');
         right: 38px;
-        top: 212px;
+        top: 240px;
         padding: 0px;
         margin: 0px;
+
+        overflow: auto;
     }
 }
 
@@ -210,6 +217,49 @@ header
     
         //border: 1px solid red;
     }
+}
+
+@media (max-width: 764px) {
+    
+    header
+    {
+        position: relative;
+        margin: auto;
+        min-width: 764x;
+        width: 764x;
+        min-height: 679px;
+        //border: 1px solid red;
+        background-image: url('../img/MainScreenBg_Plansh.png.jpg');
+    }
+
+
+    .page-nav__main-menu-list
+    {
+        content: "";
+        
+        position: absolute;
+        top: -30px;
+        margin: 0;
+        padding:0;
+
+        padding-top: 170px;
+        padding-left: 420px;
+
+        min-width: 764x;
+        min-height: 679px;
+        color: white;
+        font-size: 48px;
+        //opacity: .5;
+
+        letter-spacing: 2.6px;
+        //line-height: 21px;
+
+        box-sizing: border-box;
+
+        z-index: 10;
+        background-color: #91aa59;
+}
+    
 }
 
 

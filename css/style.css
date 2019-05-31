@@ -117,7 +117,6 @@
 
 body {
   background-color: white;
-  background-image: url("../img/MainScreenBg.png");
   background-position: top center;
   /* Положение фона */
   background-repeat: no-repeat;
@@ -143,12 +142,55 @@ body:after {
   z-index: -1;
 }
 
+@media (max-width: 764px) {
+  body:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/ref_plansh.jpg);
+    background-position: top right;
+    /* Положение фона */
+    background-repeat: no-repeat;
+    /* Отменяем повторение фона */
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 320px) {
+  body:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/ref_mobile.jpg);
+    background-position: top center;
+    /* Положение фона */
+    background-repeat: no-repeat;
+    /* Отменяем повторение фона */
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    z-index: -1;
+  }
+}
+
 header {
   position: relative;
-  margin: auto;
+  margin: 0 auto;
   min-width: 1366px;
   width: 1366px;
   min-height: 786px;
+  background-image: url("../img/MainScreenBg.png");
+  background-size: cover;
+  content: '';
+  overflow: auto;
+  content: "";
 }
 
 header::after {
@@ -158,9 +200,10 @@ header::after {
   height: 206px;
   background-image: url("../img/navigation1.png");
   right: 38px;
-  top: 212px;
+  top: 240px;
   padding: 0px;
   margin: 0px;
+  overflow: auto;
 }
 
 .page-nav {
@@ -303,5 +346,34 @@ header::after {
   background-repeat: no-repeat;
   width: 72px;
   height: 12px;
+}
+
+@media (max-width: 764px) {
+  header {
+    position: relative;
+    margin: auto;
+    min-width: 764x;
+    width: 764x;
+    min-height: 679px;
+    background-image: url("../img/MainScreenBg_Plansh.png.jpg");
+  }
+  .page-nav__main-menu-list {
+    content: "";
+    position: absolute;
+    top: -30px;
+    margin: 0;
+    padding: 0;
+    padding-top: 170px;
+    padding-left: 420px;
+    min-width: 764x;
+    min-height: 679px;
+    color: white;
+    font-size: 48px;
+    letter-spacing: 2.6px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    z-index: 10;
+    background-color: #91aa59;
+  }
 }
 /*# sourceMappingURL=style.css.map */
