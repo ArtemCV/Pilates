@@ -22,47 +22,47 @@ body
     width: 100%;
     height: 100%;
 }
-body:after {
-    content : "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url(../img/ref_desctop.jpg);
-    background-position: top center; /* Положение фона */
-    background-repeat: no-repeat; /* Отменяем повторение фона */
-    width: 100%;
-    height: 100%;
-    opacity : 0.2;
-    z-index: -1;
-}
+// body:after {
+//     content : "";
+//     display: block;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     background-image: url(../img/ref_desctop.jpg);
+//     background-position: top center; /* Положение фона */
+//     background-repeat: no-repeat; /* Отменяем повторение фона */
+//     width: 100%;
+//     height: 100%;
+//     opacity : 0.2;
+//     z-index: -1;
+// }
 
 
 @media screen and (min-width:764px) and (max-width:1365px) {
     body
     {
         background-color: white;
-        background-image: url('../img/MainScreenBg_Plansh.png.jpg');
+        //background-image: url('../img/MainScreenBg_Plansh.png.jpg');
         background-position: top right; /* Положение фона */
         background-repeat: no-repeat; /* Отменяем повторение фона */
         width: 100%;
-        height: 100%;
+        //height: 100%;
     }
 
-    body:after {
-        content : "";
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-image: url(../img/ref_plansh.jpg);
-        background-position: top right; /* Положение фона */
-        background-repeat: no-repeat; /* Отменяем повторение фона */
-        width: 100%;
-        height: 100%;
-        opacity : 0.2;
-        z-index: 1;
-    }
+    // body:after {
+    //     content : "";
+    //     display: block;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     background-image: url(../img/ref_plansh.jpg);
+    //     background-position: top right; /* Положение фона */
+    //     background-repeat: no-repeat; /* Отменяем повторение фона */
+    //     width: 100%;
+    //     height: 100%;
+    //     opacity : 0.2;
+    //     z-index: 10;
+    // }
 }
 
 // @media (max-width: 764px) {
@@ -70,7 +70,7 @@ body:after {
     
 // }
 
-@media (max-width: 320px) {
+@media (min-width: 0px) and (max-width:763px) {
     
     // body:after {
     //     content : "";
@@ -78,13 +78,14 @@ body:after {
     //     position: absolute;
     //     top: 0;
     //     left: 0;
-    //     background-image: url(../img/ref_mobile.jpg);
+    //     background-image: url(../img/ref_mobileMenu.jpg);
     //     background-position: top center; /* Положение фона */
     //     background-repeat: no-repeat; /* Отменяем повторение фона */
-    //     width: 100%;
+    //     width: 320px;
     //     height: 100%;
+    //     min-height: 700px;
     //     opacity : 0.2;
-    //     z-index: -1;
+    //     z-index: 10;
     // }
 }
 
