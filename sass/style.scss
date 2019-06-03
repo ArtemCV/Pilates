@@ -1,6 +1,6 @@
 @import "__fonts.scss";
 
-html { width:100vw; overflow-x:hidden; }
+// html { width:60vw; overflow-x:hidden; }
 
 
 .visually-hidden {
@@ -24,6 +24,7 @@ body
     background-repeat: no-repeat; /* Отменяем повторение фона */
     width: 100%;
     height: 100%;
+    border: 1px solid blue;
 }
 // body:after {
 //     content : "";
@@ -41,7 +42,7 @@ body
 // }
 
 
-@media screen and (min-width:764px) and (max-width:1365px) {
+@media screen and (min-width:321px) and (max-width:763px) {
     body
     {
         background-color: white;
@@ -73,7 +74,7 @@ body
     
 // }
 
-@media (min-width: 0px) and (max-width:763px) {
+@media (min-width: 0px) and (max-width:320px) {
     
     // body:after {
     //     content : "";

@@ -210,8 +210,9 @@ header
     color: #ffffff;
 }
 
-@media screen and (min-width:1365px){
 
+// @media screen and (min-width:1365px){
+    @media screen and (min-width:765px) and (max-width:764px) {
     header
     {
         &::after
@@ -277,7 +278,8 @@ header
 }
 
 
-@media screen and (min-width:764px) and (max-width:1365px) {
+// @media screen and (min-width:764px) and (max-width:1365px) {
+@media screen and (min-width:321px) and (max-width:764px) {
     
     header
     {
@@ -432,8 +434,8 @@ header
 }
 
 
-@media screen and (min-width:0px) and (max-width:763px) {
-
+// @media screen and (min-width:0px) and (max-width:763px) {
+    @media screen and (min-width:0px) and (max-width:320px) {
     header
     {
         //top: -10px;
@@ -450,6 +452,7 @@ header
         //border: 1px solid red;
         background-image: url('../img/MainScreenBg_Mobile.jpg');
         background-repeat: no-repeat;
+        border: 1px solid red;
         
     }
 
@@ -464,7 +467,7 @@ header
         padding-top: 90px;
         padding-left: 67px;
 
-        min-width: 320px;
+        min-width: 300px;
         width: 100%;
         min-height: 660px;
         font-size: 18px;
