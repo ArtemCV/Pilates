@@ -103,6 +103,11 @@
   font-style: normal;
 }
 
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
