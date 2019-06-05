@@ -329,7 +329,7 @@ header {
 
 @media screen and (min-width: 765px) {
   header {
-    margin-bottom: 108px;
+    margin-bottom: 105px;
   }
   header::after {
     content: "";
@@ -499,7 +499,6 @@ header {
     min-height: 475px;
     background-image: url("../img/MainScreenBg_Mobile.jpg");
     background-repeat: no-repeat;
-    margin-bottom: 45px;
   }
   .page-nav__main-menu-list {
     padding-top: 90px;
@@ -598,7 +597,8 @@ header {
 .about-us {
   position: relative;
   margin: 0 auto;
-  width: 1366px;
+  max-width: 1366px;
+  width: auto;
   min-height: 650px;
 }
 
@@ -650,6 +650,9 @@ header {
 }
 
 @media screen and (min-width: 765px) {
+  .about-us {
+    margin-bottom: 145px;
+  }
   .about-us::after {
     content: "";
     position: absolute;
@@ -815,6 +818,85 @@ header {
     z-index: -1;
     background-image: url("../img/aboutUsPhoto_Desctop.png");
     background-size: cover;
+  }
+}
+
+.schedule-cost {
+  content: "";
+  position: relative;
+  margin: 0 auto;
+  min-width: 1366px;
+  width: 1366px;
+  min-height: 786px;
+  background-size: cover;
+  overflow: auto;
+}
+
+.schedule__header {
+  position: relative;
+  font-size: 48px;
+  font-family: "Roboto Regular";
+  color: rgba(0, 0, 0, 0.871);
+  line-height: 1.2;
+  letter-spacing: -1px;
+  padding-left: 154px;
+}
+
+.schedule__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 100px;
+  margin-top: 60px;
+  width: 1165px;
+  outline: 1px solid blue;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.schedule__item {
+  position: relative;
+  display: block;
+  width: 377px;
+  min-height: 592px;
+}
+
+.schedule__one {
+  background-color: rgba(145, 170, 89, 0.5);
+}
+
+.schedule__two {
+  background-color: rgba(145, 170, 89, 0.7);
+}
+
+.schedule__three {
+  background-color: rgba(145, 170, 89, 0.9);
+}
+
+.schedule__number-bg {
+  position: absolute;
+  padding: 0 0;
+  margin: 0 0;
+  font-size: 200px;
+  font-family: "Proxima Nova Extra Bold";
+  color: rgba(255, 255, 255, 0.102);
+  line-height: 1;
+}
+
+@media screen and (min-width: 765px) {
+  .schedule__header::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 45px;
+    height: 3px;
+    left: -55px;
+    top: 25px;
+    padding: 0px;
+    margin: 0px;
+    border-bottom: 3px solid #404040;
+    overflow: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

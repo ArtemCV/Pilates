@@ -1,8 +1,9 @@
 .about-us {
   position: relative;
   margin: 0 auto;
-  //min-width: 1366px;
-  width: 1366px;
+  max-width: 1366px;
+  //width: 1366px;
+  width: auto;
   min-height: 650px;
   //outline: 1px solid red;
   //z-index: -10;
@@ -92,6 +93,7 @@
       margin: 0px;
       overflow: auto;
     }
+    margin-bottom: 145px;
   }
   .about-us__header {
     &::before {

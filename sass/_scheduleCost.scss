@@ -1,0 +1,91 @@
+.schedule-cost {
+  content: "";
+  position: relative;
+  margin: 0 auto;
+  min-width: 1366px;
+  width: 1366px;
+  min-height: 786px;
+  background-size: cover;
+
+  overflow: auto;
+}
+
+.schedule__header {
+  position: relative;
+  font-size: 48px;
+  font-family: "Roboto Regular";
+  color: rgba(0, 0, 0, 0.871);
+  line-height: 1.2;
+  letter-spacing: -1px;
+  padding-left: 154px;
+}
+
+.schedule__wrapper {
+  display: flex;
+  margin-left: 100px;
+  margin-top: 60px;
+  width: 1165px;
+  outline: 1px solid blue;
+  justify-content: space-between;
+}
+
+.schedule__item {
+  position: relative;
+  display: block;
+  width: 377px;
+  min-height: 592px;
+  //background-color:transparent;
+  //   height: 10px;
+  //outline: 1px solid red;
+}
+
+.schedule__one {
+  background-color: rgba(#91aa59, 0.5);
+}
+.schedule__two {
+  background-color: rgba(#91aa59, 0.7);
+}
+.schedule__three {
+  background-color: rgba(#91aa59, 0.9);
+}
+
+.schedule__number-bg {
+  position: absolute;
+  padding: 0 0;
+  margin: 0 0;
+  font-size: 200px;
+  font-family: "Proxima Nova Extra Bold";
+  color: rgba(255, 255, 255, 0.102);
+  line-height: 1;
+}
+
+@media screen and (min-width: 765px) {
+  .schedule-cost {
+  }
+  .schedule__header {
+    &::before {
+      content: "";
+      position: absolute;
+      display: inline-block;
+
+      width: 45px;
+      height: 3px;
+
+      //background-image: url("../img/navigation2.png");
+      left: -55px;
+      top: 25px;
+      padding: 0px;
+      margin: 0px;
+      border-bottom: 3px solid #404040;
+      overflow: auto;
+    }
+  }
+}
+
+// @media screen and (min-width:764px) and (max-width:1365px) {
+@media screen and (min-width: 321px) and (max-width: 764px) {
+}
+
+// @media screen and (min-width:0px) and (max-width:763px) {
+@media screen and (min-width: 0px) and (max-width: 320px) {
+}
