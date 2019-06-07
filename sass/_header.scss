@@ -4,12 +4,14 @@ header
     position: relative;
     margin: 0 auto;
     min-width: 1366px;
-    width: 1366px;
+    //width: 1366px;
     min-height: 786px;
     background-image: url('../img/MainScreenBg.png');
+    //background-position: 50% 50%;
+    //background-
     //color:#fff; 
     //text-align:center; 
-    background-size:cover;
+    //background-size:cover;
     content: '';
     overflow: auto;
     
@@ -207,8 +209,8 @@ header
 }
 
 
- //@media screen and (min-width:1365px){
-@media screen and (min-width:765px) {
+ @media screen and (min-width:1366px){
+//@media screen and (min-width:765px) {
     // @media screen and (min-width:765px) and (max-width:764px) {
     header
     {
@@ -226,8 +228,12 @@ header
             padding: 0px;
             margin: 0px;
 
-            overflow: auto;
+            //overflow: auto;
         }
+        //width: 100%;
+        //width: 764px;
+        min-width: 1366px;
+        width: 1366px;
         margin-bottom: 105px;
     }
 
@@ -275,8 +281,8 @@ header
 }
 
 
-// @media screen and (min-width:764px) and (max-width:1365px) {
-@media screen and (min-width:321px) and (max-width:764px) {
+ @media screen and (min-width:764px) and (max-width:1365px) {
+//@media screen and (min-width:321px) and (max-width:764px) {
     
     header
     {
@@ -288,7 +294,7 @@ header
         background-image: url('../img/MainScreenBg_Plansh.jpg');
         background-repeat: no-repeat;
         margin-bottom: 65px;
-        
+        width: 764px;
     }
 
 
@@ -433,21 +439,21 @@ header
 }
 
 
-// @media screen and (min-width:0px) and (max-width:763px) {
-    @media screen and (min-width:0px) and (max-width:320px) {
+ @media screen and (min-width:0px) and (max-width:763px) {
+ //   @media screen and (min-width:0px) and (max-width:320px) {
 
 
         header
         {
             position: relative;
-            margin: auto;
+            //margin: 0 auto;
             min-width: 320px;
-            width: 100%;
+            width: 320px;
             min-height: 475px;
             background-image: url('../img/MainScreenBg_Mobile.jpg');
             background-repeat: no-repeat;
             
-            
+            margin-bottom: 45px;
         }
 
     // header
@@ -522,10 +528,12 @@ header
 
     .main-nav-list-wrapper
     {
+        //box-sizing: border-box;
         margin-top: 14px;
         margin-left: 15px;
-        width: 100%;
+        width: 290px;
         align-items: center;
+        
         
         
     }
@@ -543,6 +551,7 @@ header
 
     .page-nav_button-open-Menu
     {
+        //display: none;
         padding: 0 0;
         //margin-top: -10px;
         border: none;

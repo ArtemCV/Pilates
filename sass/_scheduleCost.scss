@@ -25,15 +25,18 @@
   margin-left: 100px;
   margin-top: 60px;
   width: 1165px;
-  outline: 1px solid blue;
+  //outline: 1px solid blue;
   justify-content: space-between;
+
+  // border-radius: 100px;
 }
 
 .schedule__item {
   position: relative;
   display: block;
-  width: 377px;
+  width: 375px;
   min-height: 592px;
+  border-radius: 4px;
   //background-color:transparent;
   //   height: 10px;
   //outline: 1px solid red;
@@ -53,13 +56,30 @@
   position: absolute;
   padding: 0 0;
   margin: 0 0;
-  font-size: 200px;
+  top: 67px;
+  right: 46px;
+  font-size: 210px;
   font-family: "Proxima Nova Extra Bold";
   color: rgba(255, 255, 255, 0.102);
   line-height: 1;
+
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
-@media screen and (min-width: 765px) {
+.shedule-text-wrapper {
+  display: block;
+
+  margin-left: 70px;
+  margin-top: 188px;
+  outline: 1px solid red;
+  color: red;
+}
+
+@media screen and (min-width: 1366px) {
   .schedule-cost {
   }
   .schedule__header {
@@ -83,9 +103,9 @@
 }
 
 // @media screen and (min-width:764px) and (max-width:1365px) {
-@media screen and (min-width: 321px) and (max-width: 764px) {
+@media screen and (min-width: 764px) and (max-width: 1355px) {
 }
 
 // @media screen and (min-width:0px) and (max-width:763px) {
-@media screen and (min-width: 0px) and (max-width: 320px) {
+@media screen and (min-width: 0px) and (max-width: 763px) {
 }
