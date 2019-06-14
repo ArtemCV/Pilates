@@ -119,7 +119,9 @@
 //@media screen and (min-width: 321px) and (max-width: 764px) {
   .about-us {
     width: 764px;
-    min-height: 650px;
+    min-height: 400px;
+    margin-bottom: 70px;
+    //outline: 1px solid red;
   }
 
   .about-us__header {
@@ -150,6 +152,7 @@
       border-bottom: 3px solid #404040;
       overflow: auto;
     }
+    
   }
 
   .about-us__text-wrapper {
@@ -198,9 +201,10 @@
   .about-us {
     width: 320px;
     min-width: 320px;
-    min-height: 650px;
+    min-height: 400px;
     padding: 0 0;
     margin: 0 auto;
+    margin-bottom: 24px;
     //outline: 1px solid red;
   }
 

@@ -139,12 +139,12 @@ body {
     /* Отменяем повторение фона */
     width: 100%;
     height: 100%;
-    opacity: 0.9;
+    opacity: 0.8;
     z-index: -1;
   }
 }
 
-@media screen and (min-width: 764p) and (max-width: 1365px) {
+@media screen and (min-width: 764px) and (max-width: 1365px) {
   body:after {
     content: "";
     display: block;
@@ -696,7 +696,8 @@ header {
 @media screen and (min-width: 764px) and (max-width: 1365px) {
   .about-us {
     width: 764px;
-    min-height: 650px;
+    min-height: 400px;
+    margin-bottom: 70px;
   }
   .about-us__header {
     padding-left: 118px;
@@ -763,9 +764,10 @@ header {
   .about-us {
     width: 320px;
     min-width: 320px;
-    min-height: 650px;
+    min-height: 400px;
     padding: 0 0;
     margin: 0 auto;
+    margin-bottom: 24px;
   }
   .about-us__header {
     padding-top: 8px;
@@ -895,9 +897,84 @@ header {
 .shedule-text-wrapper {
   display: block;
   margin-left: 70px;
-  margin-top: 188px;
-  outline: 1px solid red;
-  color: red;
+  margin-top: 183px;
+}
+
+.schedule__level-text {
+  font-size: 15px;
+  font-family: "Roboto Medium";
+  color: white;
+  line-height: 1.2;
+  letter-spacing: 2.5px;
+  margin-bottom: 0px;
+}
+
+.schedule__level-value {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: white;
+  font-size: 28px;
+  font-family: "Roboto Medium";
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 3px;
+}
+
+.schedule__cost {
+  margin-top: 19px;
+  font-size: 24px;
+  font-family: "San Francisco Text Bold";
+  font-weight: bold;
+  letter-spacing: 0px;
+  font-weight: normal;
+  margin-bottom: 25px;
+  color: white;
+}
+
+.schedule__week {
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 15px;
+  padding-bottom: 0px;
+  font-size: 18.51px;
+  font-family: "San Francisco Text Medium";
+  letter-spacing: 0.5px;
+  font-weight: normal;
+  color: white;
+}
+
+.schedule__sign-up {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  padding-top: 15px;
+  padding-bottom: 19px;
+  padding-left: 65px;
+  padding-right: 35px;
+  margin-top: 25px;
+  font-size: 16px;
+  font-family: "San Francisco Text Medium";
+  letter-spacing: 1px;
+  color: White;
+  width: 238px;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.schedule__sign-up::after {
+  position: absolute;
+  content: "";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 21px;
+  margin-left: 28px;
+  background-image: url("../img/buttonArrow.png");
+  background-repeat: no-repeat;
+  width: 72px;
+  height: 12px;
 }
 
 @media screen and (min-width: 1366px) {
@@ -913,6 +990,266 @@ header {
     margin: 0px;
     border-bottom: 3px solid #404040;
     overflow: auto;
+  }
+}
+
+@media screen and (min-width: 764px) and (max-width: 1355px) {
+  .schedule-cost {
+    min-width: 764px;
+    width: 764px;
+  }
+  .schedule__header {
+    position: relative;
+    font-size: 24.65px;
+    font-family: "Roboto Medium";
+    color: rgba(0, 0, 0, 0.871);
+    line-height: 1;
+    letter-spacing: -0.8px;
+    padding-left: 115px;
+  }
+  .schedule__header::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 37px;
+    height: 3px;
+    left: 62px;
+    top: 7px;
+    padding: 0px;
+    margin: 0px;
+    border-bottom: 2px solid #404040;
+    overflow: auto;
+  }
+  .schedule__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 62px;
+    margin-top: 45px;
+    width: 640px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .schedule__item {
+    position: relative;
+    display: block;
+    width: 206px;
+    min-height: 371px;
+    border-radius: 4px;
+  }
+  .schedule__number-bg {
+    padding: 0 0;
+    margin: 0 0;
+    top: 25px;
+    left: 50px;
+    font-size: 114px;
+    font-family: "Proxima Nova Extra Bold";
+    color: rgba(255, 255, 255, 0.102);
+    line-height: 1;
+  }
+  .shedule-text-wrapper {
+    margin-left: 28px;
+    margin-top: 100px;
+  }
+  .schedule__level-text {
+    font-size: 11px;
+    font-family: "Roboto Medium";
+    color: white;
+    line-height: 1.2;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+  }
+  .schedule__level-value {
+    margin-top: -1px;
+    margin-bottom: 0px;
+    color: white;
+    font-size: 18px;
+    font-family: "Roboto Medium";
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 2px;
+  }
+  .schedule__cost {
+    margin-top: 12px;
+    font-size: 16px;
+    font-family: "San Francisco Text Bold";
+    font-weight: bold;
+    letter-spacing: 0px;
+    font-weight: normal;
+    margin-bottom: 25px;
+    color: white;
+  }
+  .schedule__week {
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 12px;
+    padding-bottom: 0px;
+    font-size: 16px;
+    font-family: "San Francisco Text Medium";
+    letter-spacing: -0.4px;
+    font-weight: normal;
+    color: white;
+    color: red;
+  }
+  .schedule__sign-up {
+    padding-top: 6px;
+    padding-bottom: 7px;
+    padding-left: 25px;
+    padding-right: 35px;
+    margin-top: 19px;
+    font-size: 12px;
+    font-family: "San Francisco Text Medium";
+    letter-spacing: 1px;
+    color: White;
+    color: red;
+    width: 131px;
+    border-radius: 50px;
+    text-decoration: none;
+  }
+  .schedule__sign-up::after {
+    position: absolute;
+    content: "";
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 7px;
+    right: -20px;
+    margin-left: 0px;
+    background-image: url("../img/buttonArrow_plash.png");
+    width: 35px;
+    height: 12px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 763px) {
+  .schedule-cost {
+    min-width: 322px;
+    width: 322px;
+  }
+  .schedule__header {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.871);
+    line-height: 1;
+    letter-spacing: -0.3px;
+    padding-left: 41px;
+    font-weight: normal;
+  }
+  .schedule__header::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 18px;
+    height: 3px;
+    left: 15px;
+    top: 5px;
+    padding: 0px;
+    margin: 0px;
+    border-bottom: 1px solid #404040;
+    overflow: auto;
+  }
+  .schedule__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: 39px;
+    margin-top: 27px;
+    width: 244px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .schedule__item {
+    width: 244px;
+    min-height: 371px;
+    margin-bottom: 20px;
+  }
+  .schedule__number-bg {
+    padding: 0 0;
+    margin: 0 0;
+    top: 25px;
+    left: 69px;
+    font-size: 114px;
+    font-family: "Proxima Nova Extra Bold";
+    color: rgba(255, 255, 255, 0.102);
+    line-height: 1;
+  }
+  .shedule-text-wrapper {
+    display: block;
+    margin-left: 47px;
+    margin-top: 100px;
+  }
+  .schedule__level-text {
+    font-size: 12px;
+    font-family: "Roboto Medium";
+    color: white;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+  }
+  .schedule__level-value {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+    font-size: 18px;
+    font-family: "Roboto Medium";
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 1.5px;
+  }
+  .schedule__cost {
+    margin-top: 15px;
+    font-size: 14px;
+    font-family: "San Francisco Text Bold";
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-weight: normal;
+    margin-bottom: 23px;
+    color: white;
+  }
+  .schedule__week {
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 15px;
+    padding-bottom: 0px;
+    font-size: 16px;
+    font-family: "San Francisco Text Medium";
+    letter-spacing: -0.3px;
+    font-weight: normal;
+    color: white;
+  }
+  .schedule__sign-up {
+    position: relative;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: inline-block;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    padding-left: 25px;
+    padding-right: 35px;
+    margin-top: 13px;
+    font-size: 14px;
+    font-family: "San Francisco Text Medium";
+    letter-spacing: -0.3px;
+    color: White;
+    width: 130px;
+    border: 2px solid White;
+    border-radius: 50px;
+    text-decoration: none;
+  }
+  .schedule__sign-up::after {
+    position: absolute;
+    content: "";
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 7px;
+    margin-left: 10px;
+    background-image: url("../img/buttonArrow_plash.png");
+    background-repeat: no-repeat;
+    width: 72px;
+    height: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */

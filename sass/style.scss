@@ -37,12 +37,12 @@ body {
     background-repeat: no-repeat; /* Отменяем повторение фона */
     width: 100%;
     height: 100%;
-    opacity: 0.9;
+    opacity: 0.8;
     z-index: -1;
   }
 }
 
-@media screen and (min-width: 764p) and (max-width: 1365px) {
+@media screen and (min-width: 764px) and (max-width: 1365px) {
   body:after {
     content: "";
     display: block;
